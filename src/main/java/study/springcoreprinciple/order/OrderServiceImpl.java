@@ -1,8 +1,10 @@
 package study.springcoreprinciple.order;
 
+import org.springframework.stereotype.Component;
 import study.springcoreprinciple.discount.DiscountPolicy;
 import study.springcoreprinciple.member.MemberRepository;
 
+@Component
 public class OrderServiceImpl implements OrderService{
 
     private final MemberRepository memberRepository;
@@ -19,5 +21,10 @@ public class OrderServiceImpl implements OrderService{
         var discountPrice = discountPolicy.discount(member, itemPrice);
 
         return new Order(memberId, itemName, itemPrice, discountPrice);
+    }
+
+    // 테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }
