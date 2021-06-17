@@ -7,6 +7,9 @@
 4. 스프링 컨테이너와 스프링 빈
 5. 싱글톤 컨테이너
 6. 컴포넌트 스캔
+7. 의존관계 자동주입
+8. 빈 생명주기 콜백
+9. 빈 스코프
 
 ## Reference
 * [spring-core-principle](https://www.inflearn.com/course/스프링-핵심-원리-기본편/dashboard)

@@ -15,10 +15,10 @@ import study.springcoreprinciple.member.MemoryMemberRepository;
 )
 public class AutoAppConfig {
 
-    // 수동등록빈이 자동빈을 Overriding 함. But SpringBootApplication으로 실행하면 오류가남
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    // 수동등록빈이 자동빈을 Overriding 함. But SpringBootApplication으로 실행하면 오류가남 -> 스프링에서 사용하지못하도록 했기때문
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 
 }
